@@ -97,7 +97,7 @@ const config = {
     devServer: {
       hot: false,
     },
-    publicPath: ".",
+    publicPath: "/sunrise-app",
     staticDirectory: "static",
     postcss: {
       autoprefixer: {
