@@ -19,9 +19,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 18.x
-      - run: yarn config set "strict-ssl" false -g && yarn
+      - run: npm config set "strict-ssl" false -g && npm install
       - name: build
-        run:  yarn run build:h5
+        run:  npm run build:h5
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
