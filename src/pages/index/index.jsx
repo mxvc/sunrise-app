@@ -32,9 +32,7 @@ export default class Index extends React.Component {
       this.setState({locationLoading: false})
     })
 
-    Taro.chooseLocation({
 
-    })
   }
 
   componentWillUnmount() {
