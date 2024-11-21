@@ -97,7 +97,7 @@ const config = {
     devServer: {
       hot: false,
     },
-    publicPath: "./",
+    publicPath: ".",
     staticDirectory: "static",
     postcss: {
       autoprefixer: {
