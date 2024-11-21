@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 18.x
-      - run: npm config set "strict-ssl" false -g && npm install
+      - run:  npm install
       - name: build
         run:  npm run build:h5
 
