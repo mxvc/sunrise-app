@@ -17,7 +17,7 @@ jobs:
           node-version: 14.x
 
 
-      - run: yarn --ignore-engines
+      - run: yarn config set "strict-ssl" false -g && yarn --ignore-engines
       - run: yarn run build
 
 
