@@ -4,6 +4,7 @@ import {Button, DatetimePicker, Table, Toast} from '@antmjs/vantui'
 import './index.less'
 import {calc, getCurrentLocation, getCurrentTimeStr, getCurrentZone} from "../../utils";
 import dayjs from "dayjs";
+import Taro from "@tarojs/taro";
 
 
 export default class Index extends React.Component {
@@ -29,6 +30,10 @@ export default class Index extends React.Component {
       })
     }).finally(() => {
       this.setState({locationLoading: false})
+    })
+
+    Taro.chooseLocation({
+
     })
   }
 
