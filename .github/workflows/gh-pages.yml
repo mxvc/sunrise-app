@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 18.x
 
-        run:  yarn && yarn  build:h5
+      - run:  yarn && yarn  build:h5
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
