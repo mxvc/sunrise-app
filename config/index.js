@@ -19,7 +19,7 @@ const config = {
     828: 1.81 / 2,
   },
   sourceRoot: "src",
-  outputRoot: process.env.TARO_ENV === "h5" ? "build" : process.env.TARO_ENV,
+  outputRoot: process.env.TARO_ENV === "h5" ? "sunrise-app" : process.env.TARO_ENV,
   alias: {
     "@": npath.resolve(process.cwd(), "src"),
   },
