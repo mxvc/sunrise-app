@@ -92,12 +92,12 @@ const config = {
       },
     },
     router: {
-      mode: "browser",
+      mode: "hash",
     },
     devServer: {
       hot: false,
     },
-    publicPath: "/sunrise-app",
+    publicPath: "/",
     staticDirectory: "static",
     postcss: {
       autoprefixer: {

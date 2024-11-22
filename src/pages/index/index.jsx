@@ -21,6 +21,7 @@ export default class Index extends React.Component {
   }
 
   componentDidMount() {
+    console.log('index componentDidMount')
     getCurrentLocation().then(rs => {
       this.setState({location: rs}, this.calc)
     }).catch(e => {
